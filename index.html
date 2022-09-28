@@ -11,19 +11,38 @@
     <link rel="canonical" href="https://global-products-online.github.io/folixine/">
     <meta property="og:url" content="https://global-products-online.github.io/folixine/">
     <meta property="og:site_name" content="Buy Folixine With Discount">
-    <meta property="og:image" content="https://global-products-online.github.io/folixine/bottle.jpeg">
-    <meta property="og:image:secure_url" content="https://global-products-online.github.io/folixine/bottle.jpeg">
+    <meta property="og:image" content="https://global-products-online.github.io/folixine/bottle.png">
+    <meta property="og:image:secure_url" content="https://global-products-online.github.io/folixine/bottle.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <style>
+        @font-face {
+            font-family: 'lato';
+            src: url('./Lato-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         :root {
-            --primary-color: #1A3E56;
-            --primary-color-text: #FFFFFF
+            --primary-color: #1C4561;
+            --primary-color-text: #FFFFFF;
+            --primary-color-text-black: #212529;
+            --offer-color-text: #E43B2C;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+            color: var(--primary-color-text-black);
+        }
+
+        .font-lato {
+            font-family: 'lato';
+        }
+
+        .text-primary-color {
+            color: var(--primary-color);
         }
 
         .header-background-color {
@@ -76,8 +95,8 @@
         }
 
         .btn {
-            padding: 20px;
-            border-radius: 0px;
+            border-radius: 4px;
+            min-width: 250px;
         }
 
         .btn-header {
@@ -113,11 +132,6 @@
             margin-top: 9px;
         }
 
-        .header-text {
-            margin-top: 5px;
-            font-size: 14px !important;
-        }
-
         ul {
             list-style: none;
         }
@@ -126,6 +140,35 @@
             width: 100px;
             position: absolute;
             bottom: 200px;
+        }
+
+        .regular-offer {
+            text-decoration: line-through;
+            font-size: 1.5rem;
+        }
+
+        .offer-today {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: var(--offer-color-text);
+        }
+
+        .checkout-card {
+            cursor: pointer;
+        }
+
+        .bi-star-fill {
+            color: green;
+        }
+
+        #ingredients p {
+            font-size: 1.25rem;
+        }
+
+        .header-text {
+            font-size: 0.8rem;
+            text-align: center;
+            color: var(--primary-color-text);
         }
 
         @media only screen and (min-width: 992px) {
@@ -146,7 +189,7 @@
             }
 
             .fda-icons img {
-                width: 40em;
+                width: 35em;
             }
 
             .made-logo img {
@@ -154,6 +197,12 @@
                 position: absolute;
                 left: 400px;
                 top: 600px;
+            }
+
+            .header-text {
+                margin-top: 5px;
+                font-size: 1.5rem !important;
+                color: var(--primary-color-text);
             }
         }
     </style>
@@ -172,16 +221,10 @@
 
 <body>
     <nav class="header-offer fixed-top header-background-color">
-        <div class="d-flex justify-content-center">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <span class="text-light header-text">BUY 6 BOTTLES AND SAVE $300</span>
-                <span class="text-light header-tim fa-blink">Stocks Are Running hurry up!</span>
-            </div>
-            <div class="header-btn">
-                <a href="https://mwebclassic.com/7597/914/6/?subid=btnoffer#ctaTranscript">
-                    <button type="button" class="btn-header">GET MY DISCOUNT</button>
-                </a>
-            </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <span class="header-text font-lato">Buy Folixine - Only $49/Bottle - Limited Time Offer - Save Up To $300
+                Only
+                Now</span>
         </div>
     </nav>
 
@@ -197,7 +240,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#ingredients" aria-current="page" href="#">Ingredients</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#guarantee">Guarantee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#discount">Claim Your Discount</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#checkout">Buy Now</a>
                     </li>
                 </ul>
             </div>
@@ -205,92 +257,147 @@
     </nav>
 
     <div class="container-fluid" style="margin-top: 140px;">
-        <div class="row text-center">
-            <div class="col-12">
-                <h2 class="display-5" style="color:#1A3E56;">FOLIXINE OFFICIAL</h2>
-            </div>
-        </div>
-
         <div class="d-flex flex-column flex-lg-row mt-5 text-center">
-            <div class="col img-bottle">
-                <img src="./bottle.jpeg" class="img-responsive" alt="Folixine Bottle">
+            <div class="col img-bottle mt-5">
+                <img src="./bottle.png" class="img-responsive" alt="Folixine Bottle">
             </div>
-            <div class="made-logo">
-                <img src="./usa.png" alt="made in the usa">
-            </div>
+
             <div class="col my-auto">
                 <div class="container">
                     <div class="row mt-5">
-                        <h2 class="text-center">
-                            The only 100% natural blend that targets the real cause of your hair loss.
+                        <h2 class="text-center font-lato">
+                            The only <strong class="text-success">100% natural</strong> blend that <strong
+                                class="text-success">targets the real cause of your hair loss</strong>.
                         </h2>
-                        <h5 class="mt-3">
+                        <h4 class="mt-5 font-lato">
                             Powerful mixture of 12 carefully selected ingredients, this 2,000 year old African hair
                             growth formula is the only one of its kind in the whole world.
-                        </h5>
-                        <hr>
-                        <h5>
-                            Try <strong>60 days</strong> Folixine For Only <strong>$69/Per Bottle</strong>
-                        </h5>
+                        </h4>
                     </div>
                     <div class="row mt-5">
                         <div class="d-grid gap-2 col-lg-7 mx-auto">
-                            <a href="https://mwebclassic.com/7597/914/6/?subid=btn2#ctaTranscript">
-                                <button class="btn btn-lg btn-primary-color" type="button">ACCESS OFFICIAL
-                                    WEBSITE</button>
+                            <span class="regular-offer">Regular Price $69 Per Bottle</span>
+                            <span class="offer-today">Only Today $49 Per Bottle</span>
+                            <strong class="text-danger">*Or While Stocks Last*</strong>
+                            <a href="https://mwebclassic.com/7597/914/6/?subid=primeiradobra#ctaTranscript">
+                                <img class="btn-buy" src="./btn-buy.gif" alt="" width="300">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="justify-content-center mt-5 fda-icons text-center">
+            <img src="./icons-fda.jpeg" alt="">
+        </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="row text-center">
             <div class="col">
-                <h2><strong>Introducing Folixine</strong></h2>
+                <h2 class="text-primary-color"><strong>Introducing Folixine</strong></h2>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col">
-                <p class="text-center lead">boost your hair growth on ALL areas of your scalp and increase your hair
-                    density in just a matter of weeks, and has already changed the lives of over 120,000 men and women.
+                <p class="lead">Each ingredient was carefully selected for its follicle boosting properties.
                 </p>
-                <p class="text-center lead">
-                    Every Folixine gummy is made here in the US, in our FDA approved and GMP certified facility, under
-                    extremely sterile, strict and precise conditions.
+
+                <p class="lead">
+                    And when combined together in the right quantities, all the 12 superfoods have the ability to set
+                    you free from balding no matter how naked your scalp is right now.
                 </p>
-                <p class="text-center lead">All gummies are non-GMO and safe.</p>
+                <p class="lead">Every Folixine gummy is made here in the US, in our <strong>FDA approved and GMP
+                        certified</strong>
+                    facility, under extremely sterile, strict and precise conditions.</p>
+
+                <p class="lead">All gummies are non-GMO and safe.</p>
+
+                <p class="lead">They do not contain any stimulants or toxins and they are not habit or tolerance
+                    forming.</p>
+
+                <p class="lead">Every capsule of Folixine is non-GMO and safe.</p>
+                <p class="lead">It does not require any restrictive diets or starving yourself, in fact you.</p>
             </div>
         </div>
+        <div class="row text-center mt-5">
+            <h5 class=""><strong>You’re fully covered by our 60 day no
+                    questions asked money back guarantee.</strong></h5>
+            <a href="https://mwebclassic.com/7597/914/6/?subid=segundadobra#ctaTranscript">
+                <img class="btn-buy" src="./btn-buy.gif" alt="" width="300">
+            </a>
+        </div>
+    </div>
+
+    <div id="ingredients" class="container mb-5" style="margin-top: 120px;">
+        <div class="row text-center">
+            <div class="col">
+                <h2 class="text-primary-color mb-5"><strong>Ingredients</strong></h2>
+            </div>
+        </div>
+
+        <p class="lead text-center">Folixine contains a blend of plants, herbs, vitamins, minerals, and nutrients to
+            regrow hair.</p>
+
+        <p><i class="bi bi-star-fill"></i><strong> Vitamin D3: </strong> Described as the “star ingredient” of Folixine,
+            vitamin D3 can help baldness by fighting back against a sweaty head. One of the main symptoms of vitamin D3
+            deficiency is a sweaty head and excessive sweating. When you sweat, it’s harder for your hair to regrow.
+            That’s why, according to Folixine.com, many bald men have shiny heads. The vitamin D3 in Folixine can
+            purportedly help with this, working to regrow hair and get lactic acid under control.</p>
+
+        <p><i class="bi bi-star-fill"></i><strong> Biotin:</strong> Is a B vitamin. Biotin is found in virtually every
+            hair and nail supplement worldwide because of its proven effects on keratin. The makers of Folixine claim to
+            have sourced their biotin from “rare algae found in the Indian Ocean.” According to the manufacturer, biotin
+            restores keratin production in your hair, disrupted by lactic acid buildup, thereby increasing follicle
+            growth and preventing age-related hair loss.</p>
+
+        <p><i class="bi bi-star-fill"></i><strong> Other Vitamins & Minerals:</strong> Folixine also contains vitamin E,
+            B6, folate, sodium, iodine, and other vitamins and minerals. These vitamins and minerals work in different
+            ways with a similar goal: to help turbo-boost hair growth on bald patches and improve length and density.
+        </p>
+
+        <p><i class="bi bi-star-fill"></i><strong> Amino Acids:</strong> Folixine contains amino acids to help your hair
+            regrow. Amino acids can help distribute oxygen and blood to your scalp, stimulating hair growth.</p>
+
+        <p><i class="bi bi-star-fill"></i><strong> African Marula Tree Extract:</strong> Many of the ingredients in
+            Folixine are derived from the African Marula tree, which is the tree used in the traditional Himba tribes
+            people’s hair growth recipe. Also known as Sclerocarya birrea, the tree is rich in vitamin E, vitamin B3,
+            iron, calcium, potassium, amino acids, and other nutrients found in the Folixine formula. Although Folixine
+            does not appear to contain African Marula tree extract directly, the formula is inspired by the African
+            Marula tree.</p>
     </div>
 
     <div class="divider py-5 bg-dark mt-4 text-light">
         <h2 class="text-center text-success text-bold">Why Choose Folixine</h2>
         <div class="d-flex flex-wrap flex-column flex-lg-row mt-5 text-center mx-3">
             <div class="col">
-                <h3>100% Effective</h3>
+                <h1><i class="bi bi-check-circle text-success"></i></h1>
+                <h3 class="mt-4">100% Effective</h3>
                 <hr>
-                <p class="lead">mixing ingredients in the right way and in the right amount to keep their properties
+                <p class="lead">Mixing ingredients in the right way and in the right amount to keep their properties
                     intact</p>
             </div>
             <div class="col">
-                <h3>100% Pure</h3>
+                <h1><i class="bi bi-check-circle text-success"></i></h1>
+                <h3 class="mt-4">100% Pure</h3>
                 <hr>
-                <p class="lead">processed under strict sterile standards with regularly disinfected equipment</p>
+                <p class="lead">Processed under strict sterile standards with regularly disinfected equipment</p>
             </div>
+        </div>
+        <div class="text-center mt-5">
+            <p><b>Our customer say</b></p>
+            <img src="./rating.png" width="270" height="50" alt="">
+            <p class="mt-3">Based on 100,000+ reviews!</p>
         </div>
     </div>
 
-    <div id="guarantee" class="container">
-        <hr>
+    <div id="guarantee" class="container mt-5">
         <div class="row text-center">
             <div class="col img-guarantee">
                 <img src="./guarantee.png" alt="Img guarantee">
             </div>
             <div class="col my-auto">
-                <h2 class="text-center mt-4">60 Days Money Back Guarantee</h2>
+                <h2 class="text-center text-primary-color mt-4">60 Days Money Back Guarantee</h2>
                 <p class="fs-5 fw-light text-justify mt-3">Folixine supplement This product is backed by a
                     <strong>100%
                         money back guarantee for 60
@@ -303,23 +410,157 @@
                     run and completely change your life.
                 </p>
                 <div class="d-grid gap-2 col-lg-7 mx-auto mt-5">
-                    <a href="https://mwebclassic.com/7597/914/6/?subid=btn1#ctaTranscript">
-                        <button class="btn btn-lg btn-primary-color" type="button">ACCESS OFFICIAL WEBSITE</button>
+                    <a href="https://mwebclassic.com/7597/914/6/?subid=terceiradobra#ctaTranscript">
+                        <img class="btn-buy" src="./btn-buy.gif" alt="" width="300">
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <div id="checkout" class="container text-center" style="margin-top: 100px;">
+        <div class="row justify-content-center">
+            <div class="col col-md-4">
+                <div class="card text-center checkout-card" style="width: 22rem; min-height: 650px;">
+                    <div class="card-body">
+                        <h5 class="card-title">1 BOTTLE</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">30 Day Supply</h6>
+                        <img class="mt-4" src="./bottle.png" alt="" width="100" height="auto">
+                        <div class="mt-5">
+                            <span>
+                                <h2><strong>$69</strong></h2>
+                                PER BOTTLE
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <a href="https://mwebclassic.com/7597/914/6/?subid=1pote#ctaTranscript">
+                                <button type="button" class="btn btn-warning btn-lg mt-3">BUY NOW</button>
+                            </a>
+                            <div class="mt-4">
+                                <strong>Today only <span style="text-decoration: line-through;">$99</span> $69</strong>
+                                <br>
+                                <small class="text-muted mt-2">SMALL SHIPPING FEE</small>
+                                <strong>
+                                    <h4><i class="bi bi-truck"></i></h4>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="card text-center checkout-card" style="width: 22rem; min-height: 650px;">
+                    <div class="card-body">
+                        <h5 class="card-title">6 BOTTLES</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">180 Day Supply</h6>
+                        <img class="mt-4" src="./6-bottles.png" alt="" width="200" height="auto">
+                        <div class="mt-5">
+                            <span>
+                                <h2><strong>$49</strong></h2>
+                                PER BOTTLE
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <span class="offer-today"><strong>YOU SAVE $300</strong></span>
+                            <a href="https://mwebclassic.com/7597/914/6/?subid=6potes#ctaTranscript">
+                                <button type="button" class="btn btn-warning btn-lg mt-3">BUY NOW</button>
+                            </a>
+                            <div class="mt-4">
+                                <strong>Today only <span style="text-decoration: line-through;">$594</span>
+                                    $294</strong>
+                                <br>
+                                <small class="text-muted mt-2">FREE U.S
+                                    SHIPPING</small>
+                                <strong>
+                                    <h4><i class="bi bi-truck"></i></h4>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="card text-center checkout-card" style="width: 22rem; min-height: 650px;">
+                    <div class="card-body">
+                        <h5 class="card-title">3 BOTTLES</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">90 Day Supply</h6>
+                        <img class="mt-4" src="./3-bottles.png" alt="" width="200" height="auto">
+                        <div class="mt-5">
+                            <span>
+                                <h2><strong>$59</strong></h2>
+                                PER BOTTLE
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <span class="offer-today"><strong>YOU SAVE $120</strong></span>
+                            <a href="https://mwebclassic.com/7597/914/6/?subid=3potes#ctaTranscript">
+                                <button type="button" class="btn btn-warning btn-lg mt-3">BUY NOW</button>
+                            </a>
+                            <div class="mt-4">
+                                <strong>Today only <span style="text-decoration: line-through;">$297</span>
+                                    $177</strong>
+                                <br>
+                                <small class="text-muted mt-2">FREE U.S SHIPPING</small>
+                                <strong>
+                                    <h4><i class="bi bi-truck"></i></h4>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="discount" class="divider py-5 bg-dark mt-4">
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date().getTime() + 30 * 60 * 1000;
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                // document.getElementById("header-minutes").innerHTML = `${minutes} minutes - ${seconds} seconds`;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("header-minutes").innerHTML = "-"
+                    document.getElementById("minutes").innerHTML = "-";
+                    document.getElementById("seconds").innerHTML = "-";
+                }
+            }, 1000);
+        </script>
         <h1 class="text-warning text-center mb-5">ONLY TODAY SAVE UP TO $300</h1>
         <h1 class="text-light text-center">
             Claim Your Discounted Folixine Below While Stock Last
         </h1>
         <div class="container text-light">
             <div class="d-flex flex-column align-items-center mt-4">
+                <div class="row numbers">
+                    <div id="minutes" class="col">
+                    </div>
+                    <div id="seconds" class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col">Minutes</div>
+                    <div class="col">Seconds</div>
+                </div>
                 <div class="row mt-4">
                     <div class="col">
-                        <span class="lead">LIMITED TIME OFFER</span>
+                        <span class="lead">ENDING SOON</span>
                     </div>
                 </div>
             </div>
